@@ -35,7 +35,7 @@ export default function ADMEntregador() {
       try {
         setLoad(true);
         const response = await axios.get(
-          `http://89.116.73.130:8080/entregadores/all`,
+          `http://89.116.74.67:8080/entregadores/all`,
           {
             headers: {
               Authorization: token,
@@ -67,7 +67,7 @@ export default function ADMEntregador() {
         try {
           setLoad(true);
           const response = await axios.get(
-            `http://89.116.73.130:8080/entregadores/${entregadorSelecionado.year}`,
+            `http://89.116.74.67:8080/entregadores/${entregadorSelecionado.year}`,
             {
               headers: {
                 Authorization: token,
@@ -97,7 +97,7 @@ export default function ADMEntregador() {
         ativo: !values.ativo,
       };
       await axios.put(
-        'http://89.116.73.130:8080/entregadores',
+        'http://89.116.74.67:8080/entregadores',
         entregadorData,
         {
           headers: {

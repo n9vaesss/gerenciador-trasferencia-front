@@ -20,7 +20,7 @@ export default function EnviadaTransferencia() {
         try {
           setLoad(true);
           const response = await axios.get(
-            `http://89.116.73.130:8080/transferencias/pendentes`,
+            `http://89.116.74.67:8080/transferencias/pendentes`,
             {
               headers: {
                 Authorization: token,
@@ -37,7 +37,7 @@ export default function EnviadaTransferencia() {
         try {
           setLoad(true);
           const response = await axios.get(
-            `http://89.116.73.130:8080/transferencias/${lojaRegistro}/pendentes`,
+            `http://89.116.74.67:8080/transferencias/${lojaRegistro}/pendentes`,
             {
               headers: {
                 Authorization: token,

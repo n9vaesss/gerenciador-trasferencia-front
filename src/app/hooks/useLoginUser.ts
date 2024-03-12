@@ -22,7 +22,7 @@ const useClient = () => {
           const token = Cookie.get('auth_token');
           try {
             const response = await axios.get(
-              `http://89.116.73.130:8080/usuarios/${userData.username}`,
+              `http://89.116.74.67:8080/usuarios/${userData.username}`,
               {
                 headers: {
                   Authorization: token,

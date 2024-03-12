@@ -32,7 +32,7 @@ export default function FormInserEntregador() {
     try {
       setLoad(true);
       await axios.post(
-        'http://89.116.73.130:8080/entregadores',
+        'http://89.116.74.67:8080/entregadores',
         dadosEntregadores,
         {
           headers: {

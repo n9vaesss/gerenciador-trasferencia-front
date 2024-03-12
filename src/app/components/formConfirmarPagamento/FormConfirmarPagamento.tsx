@@ -20,7 +20,7 @@ export default function FormConfirmarPagamento({
       await Promise.all(
         ids.map(async (singleId: string) => {
           const response = await axios.get(
-            `http://89.116.73.130:8080/transferencias/${singleId}`,
+            `http://89.116.74.67:8080/transferencias/${singleId}`,
             {
               headers: {
                 Authorization: token,
@@ -29,7 +29,7 @@ export default function FormConfirmarPagamento({
           );
           if (response.data.status === 'FINALIZADA') {
             await axios.put(
-              `http://89.116.73.130:8080/transferencias/${singleId}/status`,
+              `http://89.116.74.67:8080/transferencias/${singleId}/status`,
               null,
               {
                 params: {

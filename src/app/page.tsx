@@ -23,7 +23,7 @@ export default function Page() {
   });
 
   const handleSubmit = async (values: any) => {
-    const apiUrl = 'http://89.116.73.130:8080/login';
+    const apiUrl = 'http://89.116.74.67:8080/login';
     const userData = {
       username: values.email,
       password: values.senha,

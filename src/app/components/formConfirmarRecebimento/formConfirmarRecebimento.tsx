@@ -24,7 +24,7 @@ export default function FormConfirmarRecebimento({ id }: any) {
       try {
         setLoad(true);
         const response = await axios.get(
-          `http://89.116.73.130:8080/transferencias/${id}`,
+          `http://89.116.74.67:8080/transferencias/${id}`,
           {
             headers: {
               Authorization: token,
@@ -47,7 +47,7 @@ export default function FormConfirmarRecebimento({ id }: any) {
       try {
         setLoad(true);
         const response = await axios.get(
-          `http://89.116.73.130:8080/entregadores`,
+          `http://89.116.74.67:8080/entregadores`,
           {
             headers: {
               Authorization: token,
@@ -79,7 +79,7 @@ export default function FormConfirmarRecebimento({ id }: any) {
     try {
       setLoad(true);
       await axios.put(
-        `http://89.116.73.130:8080/transferencias/${id}/status-entregador`,
+        `http://89.116.74.67:8080/transferencias/${id}/status-entregador`,
         null,
         {
           params: {

@@ -43,7 +43,7 @@ export default function AdmInserirUsuario() {
 
     try {
       setLoad(true);
-      await axios.post('http://89.116.73.130:8080/usuarios', dadosUsuario, {
+      await axios.post('http://89.116.74.67:8080/usuarios', dadosUsuario, {
         headers: {
           Authorization: token,
         },

@@ -28,7 +28,7 @@ export default function InsercaoUsuario() {
     const buscarTodosUsuarios = async () => {
       try {
         setLoad(true);
-        const response = await axios.get(`http://89.116.73.130:8080/usuarios`, {
+        const response = await axios.get(`http://89.116.74.67:8080/usuarios`, {
           headers: {
             Authorization: token,
           },
@@ -59,7 +59,7 @@ export default function InsercaoUsuario() {
         try {
           setLoad(true);
           const response = await axios.get(
-            `http://89.116.73.130:8080/usuarios/${usuarioSelecionado.label}`,
+            `http://89.116.74.67:8080/usuarios/${usuarioSelecionado.label}`,
             {
               headers: {
                 Authorization: token,
@@ -76,7 +76,7 @@ export default function InsercaoUsuario() {
             try {
               setLoad(true);
               const response = await axios.get(
-                `http://89.116.73.130:8080/roles`,
+                `http://89.116.74.67:8080/roles`,
                 {
                   headers: {
                     Authorization: token,

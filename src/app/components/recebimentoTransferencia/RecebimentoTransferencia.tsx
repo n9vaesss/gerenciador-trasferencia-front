@@ -20,7 +20,7 @@ export default function RecebimentoTransferencia() {
         try {
           setLoad(true);
           const response = await axios.get(
-            `http://89.116.73.130:8080/transferencias/enviadas`,
+            `http://89.116.74.67:8080/transferencias/enviadas`,
             {
               headers: {
                 Authorization: token,
@@ -37,7 +37,7 @@ export default function RecebimentoTransferencia() {
         try {
           setLoad(true);
           const response = await axios.get(
-            `http://89.116.73.130:8080/transferencias/${lojaRegistro}/enviadas`,
+            `http://89.116.74.67:8080/transferencias/${lojaRegistro}/enviadas`,
             {
               headers: {
                 Authorization: token,

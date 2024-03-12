@@ -15,7 +15,7 @@ const useUsuario = (username: any) => {
       try {
         setLoad(true);
         const response = await axios.get(
-          `http://89.116.73.130:8080/usuarios/${username}`,
+          `http://89.116.74.67:8080/usuarios/${username}`,
           {
             headers: {
               Authorization: token,

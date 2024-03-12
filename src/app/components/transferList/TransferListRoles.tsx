@@ -99,7 +99,7 @@ export default function SelectAllTransferList({
 
       try {
         setLoad(true);
-        await axios.put('http://89.116.73.130:8080/usuarios', usuarioData, {
+        await axios.put('http://89.116.74.67:8080/usuarios', usuarioData, {
           headers: {
             Authorization: token,
           },
